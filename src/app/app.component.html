@@ -1,0 +1,11 @@
+<h1>
+  Hello name
+</h1>
+<div>
+  @for (note of notes; track note.id)
+  {
+    <li>{{note.id}}: {{note.title}} with {{note.content}}</li>
+  } @empty {
+    <li>loading</li>
+  }
+</div>
