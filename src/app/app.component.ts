@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {Note} from "./model/Note";
+import {Note} from "./models/Note";
+import {NoteComponent} from "./components/note/note.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, NoteComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

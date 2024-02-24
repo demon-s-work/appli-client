@@ -4,7 +4,7 @@
 <div>
   @for (note of notes; track note.id)
   {
-    <li>{{note.id}}: {{note.title}} with {{note.content}}</li>
+    <note-ui [data]="note"></note-ui>
   } @empty {
     <li>loading</li>
   }
